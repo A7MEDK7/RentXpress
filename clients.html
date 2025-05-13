@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts (Ropoto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google Fonts (open sans)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Google Fonts (Sansita Swashed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <!-- Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Normalize CSS File (To Render All Elemnts Normally) -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- title Of The Web -->
+    <title>RentXpress</title>
+
+</head>
+<body>
+    <div class="page">
+        <button id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+        <div class="nav p-20">
+
+            <aside class="flex-col">
+                <h1 class="title f18 fw-bold mb-30 mt-5 pb-10 p-relative">RentXpress <span><img src="image/LOGO.png" alt="Logo"></span></h1>
+                <div class="menu flex-col">
+                    <a href="index.html" class="part mb-10 f13">
+                    <i class="fa-solid fa-car pr-10"></i>
+                        <h3>Rent Car</h3>
+                    </a>
+                    <a href="maintenance.html" class="part mb-10 f13">
+                        <i class="fa-solid fa-screwdriver-wrench pr-10"></i>
+                        <h3>Maintenance</h3>
+                    </a>
+                    <a href="clients.html" class="active part mb-10 f13">
+                        <i class="fa-solid fa-user-group pr-10"></i>
+                        <h3>Our Clients</h3>
+                    </a>
+                    <a href="team.html" class="part mb-10 f13">
+                        <i class="fa-solid fa-users pr-10"></i>
+                        <h3>Our Team</h3>
+                    </a>
+                    <a href="statistics.html" class="part f13">
+                        <i class="fa-solid fa-chart-line pr-10"></i>
+                        <h3>Statistics</h3>
+                    </a>
+                </div>
+            </aside>
+        </div>
+
+        <div class="content">
+            <header class="flex-between pr-10 pl-10">
+                <div class="search p-relative">
+                    <input id="searchInput" type="search" placeholder="Search Car">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+                <div class="flex-between setting">
+                    <button class="menu-btn hidden">
+                        <i class="menu-btn-icon fa-solid fa-bars"></i>
+                    </button>
+                    <i id="favo-cars" class="fa-solid fa-heart"></i>
+                    <div>
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <i><img class="light" src="image/light-mode.png" alt="Day-Mode"></i>
+                            <i><img class="dark" src="image/dark-mode.png" alt="Night-Mode"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+                    <a href="https://www.linkedin.com/in/ahmed-khaled-6b86042ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="image/a7k.jpg" alt="user">
+                    </a>
+                </div>
+            </header>
+            <main>
+            <div class="box m-10 p-10 rad-10">
+                <div class="title">
+                    <h1>Our Clients</h1>
+                </div>
+                <div class="container grid-4 p-10 rad-10">
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Ahmed</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 123456789</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> ahmed@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/5/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 2 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> BMW 5 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Mohamed</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 456789000</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> mohamed@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/1/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 6 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Mercedes C-Class 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn wait">Pending</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Abdallah</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 741102369</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> abdallah@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/3/30</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 4 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> BMW X5 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Mostafa</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 789456123</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> mostafa@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/5/20</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 7 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Tesla Model X 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Ali</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 744000369</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> ail@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/9/20</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 3 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Hyundai Elantra 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn canceled">Canceled</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Mahmoud</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 000222444</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> mahmoud@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/5/30</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 2 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Ford Fusion 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Khaled</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 888999333</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> khaled@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/7/30</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 8 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Lexus ES 2022</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn wait">Pending</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Omar</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 777888999</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> omar@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/5/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 3 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Honda Accord 2024</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn canceled">Canceled</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Amar</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 666555444</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> amar@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/4/29</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 8 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Cadillac CT5 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Emad</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 000222555</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> emad@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/6/7</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 9 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Jaguar XF 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Said</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 789410369</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> said@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/9/25</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 6 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Kia Optima 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn wait">Pending</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Hossam</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 147896325</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> hossam@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/10/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 4 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Chevrolet Malibu 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn wait">Pending</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Abdelrahman</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 123654789</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> abdelrahman@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/8/8</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 8 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Subaru Lagacy 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn canceled">Canceled</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Essam</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 999777000</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> essam@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/10/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 8 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Mazda 6 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn wait">Pending</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Shehta</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 111222333</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> shehta@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/5/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 4 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Toyota Corolla 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Amr</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 456123789</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> amr@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/9/20</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 3 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Tesla Model S 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn canceled">Canceled</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Hassan</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 369852147</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> hassan@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/5/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 2 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Audi A6 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Ibrahim</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 000444569</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> ibrahim@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/7/29</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 9 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Ford Explorer 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn wait">Pending</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Salm</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 896214753</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> salm@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/10/1</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 9 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> Dodge Durango 2023</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn wait">Pending</p>
+                        </div>
+                    </div>
+                    <div class="user flex-col p-10 rad-10">
+                        <div class="heading flex-between pb-5 mb-5 border-bottom-ccc">
+                            <h3 class="f18">Abdelwahab</h3>
+                            <img src="image/user.jpg" alt="user">
+                        </div>
+                        <div class="data pb-5 mb-5 border-bottom-ccc">
+                            <div class="fw-bold f15 mt-5 mb-5">Number:<span class="fw-normal"> 632478951</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Email:<span class="fw-normal"> abdelwahab@example.com</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Registration Date:<span class="fw-normal"> 2024/6/29</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Rental Period:<span class="fw-normal"> 4 Weeks</span></div>
+                            <div class="fw-bold f15 mt-5 mb-5">Vehicle:<span class="fw-normal"> GMC Yukon 2022</span></div>
+                        </div>
+                        <div class="state flex-between">
+                            <h3 class="fw-bold f18 mt-5 mb-5">Transaction state</h3>
+                            <p class="btn comp">Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Modal Car -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <h2 class="f20 name">...</h2>
+            <p class="f13 mt-10 color-888 description">...</p>
+            <div class="popup-info">
+                <img class="car-popup-img" src="" alt="popUp">
+                <ul class="car-detils">
+                    <li class="category">...</li>
+                    <li class="performance">...</li>
+                    <li class="power">...</li>
+                    <li class="fuel">...</li>
+                    <li><p class="price">...</p> <button class="rent fw-normal">Rent The Car</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="favorites-container">
+        <i class="close-favo fa-solid fa-xmark"></i>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="image/LOGO.png" alt="RentXpress Logo" class="footer-logo">
+                <p class="p-footer">Experience luxury driving with our premium fleet of vehicles. We offer exceptional service and the finest cars for your journey.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="maintenance.html">Maintenance</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Car Categories</h4>
+                <ul>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#eco-cars">Economy Cars</a></li>
+                    <li><a href="#mid-cars">Mid-Range Cars</a></li>
+                    <li><a href="#lux-cars">Luxury Cars</a></li>
+                    <li><a href="#suv-cars">SUVs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> 550 Egypt, City</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> info@rentxpress.com</p>
+                </div>
+                <h4>Newsletter</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 RentXpress. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <img src="image/path-to-visa-icon.png" alt="Visa">
+                <img src="image/path-to-mastercard-icon.png" alt="MasterCard">
+                <img src="image/path-to-amex-icon.png" alt="American Express">
+                <img src="image/path-to-paypal-icon.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
