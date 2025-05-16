@@ -449,7 +449,7 @@ function toggleDarkMode() {
             "aside a i", ".modal-content", ".modal .car-detils",
             ".favorites-container", "aside h1", "main .box .title p",
             ".container .user", ".container", ".container .user h3",
-            ".container .stat", ".footer", ".footer-bottom"
+            ".container .stat", ".footer", ".footer-bottom" , "aside .menu .active"
         ];
     
         elementsToToggle.forEach(selector => {
